@@ -1,0 +1,29 @@
+
+1. docs 문서 안보고 막 하다가 뻘짓으로 하루 다가고.. 6시 한시간 전에 
+	
+	* https://docs.python.org/3/howto/curses.html
+	- The Windows version of Python doesn’t include the curses module. 
+		A ported version called UniCurses is available. 
+		You could also try the Console module written by Fredrik Lundh, 
+		which doesn’t use the same API as curses but provides cursor-addressable text output and full support for mouse and keyboard input.
+	 ㅡㅡ 
+2. uniCurses 해도 안돼 오류 찾다가 찾다가 
+	* stackOverflow
+	- http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses
+	
+3. 실행 했는데도 안돼.. ㅡㅡ 
+
+	* 찾다 찾다가 
+	- http://stackoverflow.com/questions/13434514/python-curses-initscr-error
+		"Just left click on your .py program and it will make its own call to Python and its extensions and this error goes away."
+	 
+	 - 결론은 실행으로 끝!!! 
+		
+............. 뱀하나 실행시키기가 이토록 힘들고 어렵고 난해했다. 
+	
+	
+?1 오버로딩은 될까?
+?1 오버라이딩은 될까?
+- 새롭게 배워야 하는데 스타일도 새롭게 맞춰서 해야하는데 내가 해놓은 범위에서만 생각을 한다. 
+이러면 안되는데.... 
+

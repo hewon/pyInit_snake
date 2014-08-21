@@ -1,0 +1,41 @@
+#print('Hello World')
+# http://libsora.so/posts/python-excel-library/ 
+# XlsxWriter 엑셀 읽기
+# How to install Python packages on Windows 7
+
+#윈도우에서 인스톨 방법
+    # http://www.instructables.com/id/How-to-install-Python-packages-on-Windows-7/
+    # https://pypi.python.org/pypi/XlsxWriter/0.5.6
+    
+    
+    # 패스 설정
+    ## set path=%path%;C:\Python34\
+    
+    # 패키지 셋팅 셋업
+    ## python setup.py install
+    
+    ## 확인
+    ## C:\Python34\Lib\site-packages
+    ## python 프롬프트 실행 하여... 
+    ## 명령어 치기 : import json as simplejson
+    
+    
+    
+ ####
+ 사전 작업 (cx_Oracle source download)
+  : 웹상에 보면 라이브러리 설치는 rpm도 있고, easy_install 같은 간단 버전도 있지만, 만일 이런
+   기본 설치로 잘 안되면 무조건 일단 소스를 받아서 메뉴얼을 읽어봐야 합니다. (readme, build 등)
+   기본 설치 및 간단히 설치하는 툴은 보통 널리 알려진 약속된 행위들을 가정하고 있습니다.
+   초보자 입장에서 이러한 상식아닌 상식에 대한 부분을 모른다면, 삽질의 시간은 무한정 늘어날 수
+   있습니다; 일단 쉽게 설치가 안되면 무조건 메뉴얼을 보며 차근차근 추적합니다.(영문이라도!)
+   
+   
+###   
+	http://digndig.net/blog/2013/03/03/pypi-the-python-package-index/
+	PyPI(the Python Package Index)가 있다! PyPI는 간단히 말해서 파이썬 관련 소프트웨어들이 모여있는 저장소라고 할 수 있다. 파이썬 개발자들은 자신들의 개발한 (또는 자신과 관련있는) 파이썬 모듈들을 PyPI에 업로드한다. 그리고 PyPI에 저장된 이 모듈들은 누구에게나 공개되어 있으며, PyPI 홈페이지에 직접 접속하지 않고 간단한 프로그램을 통해서 아주 손쉽게 자신이 원하는 모듈을 다운로드 할 수 있다.
+ 
+	###
+	https://pypi.python.org/ 
+ 	<모듈을 다운받아서 직접 설치하기>
+ 	sudo python setup.py install
+ 	
