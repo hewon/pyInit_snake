@@ -5,14 +5,20 @@ import curses
 from curses import KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN
 from random import randint
 
-
+# 내가 만든걸 생각해보고... 어디에 쓰이는지 찾아보자.
+# curses를 내가 왜 쓰려고 하는 걸까? ... ㅡㅡ; 
+# 통신도 하려면 토할거 같은데 ㅡㅡ;
+# 렌더링이 어케 되는거지? 
+ 
 curses.initscr()
 win = curses.newwin(20, 60, 0, 0)
-win.keypad(1)
-curses.noecho()
-curses.curs_set(0)
-win.border(0)
-win.nodelay(1)
+curses.noecho() # 사용자 입력 출력할지 
+
+win.keypad(1)#사용 가능한 특수키 지정 1 = f1
+curses.curs_set(0) # 커서 visible : range( 0 ~ 2 ) 
+
+win.border("#") #????????????
+win.nodelay(1) # if 1 getch() will be non-blocking.
 
 key = KEY_RIGHT                                                    # Initializing values
 score = 0
@@ -22,16 +28,15 @@ food = [10,20]                                                     # First food 
 
 win.addch(food[0], food[1], '*')                                   # Prints the food
 
-while key != 27:                                                   # While Esc key is not pressed
-    win.border(0)
+while key != 27: #27이 먼지도 알아보자!                           # While Esc key is not pressed
+    win.border("#")
     win.addstr(0, 2, 'Score : ' + str(score) + ' ')                # Printing 'Score' and
     win.addstr(0, 27, ' SNAKE ')                                   # 'SNAKE' strings
     win.timeout(int( 150 - (len(snake)/5 + len(snake)/10)%120))          # Increases the speed of Snake as its length increases
     
     prevKey = key                                                  # Previous key pressed
     event = win.getch()
-    key = key if event == -1 else event 
-
+    key = key if event == -1 else event#????????????
 
     if key == ord(' '):                                            # If SPACE BAR is pressed, wait for another
         key = -1                                                   # one (Pause/Resume)
